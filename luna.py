@@ -54,7 +54,7 @@ async def type_and_send(message):
 async def repo(_, message):
     await message.reply_text(
         "[📡kaynak kod📡](https://github.com/kumsalfed6301)"
-        + " | [Group](t.me/PatheticProgrammers)",
+        + " | [sohbet grubu](t.me/GeceSohbettr)",
         disable_web_page_preview=True,
     )
 
