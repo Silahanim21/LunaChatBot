@@ -50,15 +50,6 @@ async def type_and_send(message):
     await message._client.send_chat_action(chat_id, "cancel")
 
 
-@luna.on_message(filters.command("repo") & ~filters.edited)
-async def repo(_, message):
-    await message.reply_text(
-        "[📡kaynak kod📡](https://github.com/kumsalfed6301)"
-        + " | [sohbet grubu](t.me/GeceSohbettr)",
-        disable_web_page_preview=True,
-    )
-
-
 @luna.on_message(filters.command("help") & ~filters.edited)
 async def start(_, message):
     await luna.send_chat_action(message.chat.id, "typing")
